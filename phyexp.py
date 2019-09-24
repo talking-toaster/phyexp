@@ -100,8 +100,8 @@ def main():
                         print('可选择'+str(couse)+' '+choseBt[0])
                         driver.execute_script(f'document.querySelector("#vux_view_box_body > div.router-view > div:nth-child({choseBt[1]}) > div > div.vux-cell-bd.vux-cell-primary > span > div > div.action-wrapper > button").click()')
                         time.sleep(3)        
-                        driver.execute_script(f'document.querySelector("body > div:nth-child(9) > div > div > div.weui-dialog > div.weui-dialog__ft > a.weui-dialog__btn.weui-dialog__btn_default").click()')
-                        #driver.execute_script(f'document.querySelector("body > div:nth-child(9) > div > div > div.weui-dialog > div.weui-dialog__ft > a.weui-dialog__btn.weui-dialog__btn_primary").click()')
+                        #driver.execute_script(f'document.querySelector("body > div:nth-child(9) > div > div > div.weui-dialog > div.weui-dialog__ft > a.weui-dialog__btn.weui-dialog__btn_default").click()')
+                        driver.execute_script(f'document.querySelector("body > div:nth-child(9) > div > div > div.weui-dialog > div.weui-dialog__ft > a.weui-dialog__btn.weui-dialog__btn_primary").click()')
                         return True
         driver.close()
         return False
